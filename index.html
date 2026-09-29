@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinchana M C | Student Portfolio</title>
-    <meta name="description" content="Personal Portfolio of Sinchana M C, 3rd Semester B.Tech Computer Science student at REVA University, Bangalore. Exploring Programming, Web Development, AI, and Cybersecurity.">
+    <meta name="description"
+        content="Personal Portfolio of Sinchana M C, 3rd Semester B.Tech Computer Science student at REVA University, Bangalore. Exploring Programming, Web Development, AI, and Cybersecurity.">
     <meta name="author" content="Sinchana M C">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <style>
         /* ==========================================================================
@@ -22,7 +26,7 @@
             --bg-card-alt: #161e31;
             --bg-glass: rgba(17, 23, 38, 0.75);
             --bg-input: #1a233a;
-            
+
             --primary: #6366f1;
             --primary-hover: #4f46e5;
             --primary-light: #818cf8;
@@ -30,31 +34,33 @@
             --purple: #a855f7;
             --emerald: #10b981;
             --amber: #f59e0b;
-            
+
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --text-dim: #64748b;
-            
+
             --border: rgba(255, 255, 255, 0.08);
             --border-hover: rgba(99, 102, 241, 0.4);
-            
+
             --gradient-primary: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
             --gradient-accent: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
             --gradient-glow: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
-            
+
             --radius-sm: 8px;
             --radius-md: 14px;
             --radius-lg: 20px;
             --radius-full: 9999px;
-            
+
             --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
             --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.35);
             --shadow-glow: 0 0 25px rgba(99, 102, 241, 0.25);
-            
+
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -71,13 +77,18 @@
             color: var(--text-main);
             line-height: 1.6;
             overflow-x: hidden;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
                 radial-gradient(circle at 85% 65%, rgba(6, 182, 212, 0.08) 0%, transparent 40%);
             background-attachment: fixed;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Outfit', sans-serif;
             font-weight: 700;
             color: var(--text-main);
@@ -314,11 +325,13 @@
             border-radius: 2px;
         }
 
-        .nav-link:hover, .nav-link.active {
+        .nav-link:hover,
+        .nav-link.active {
             color: var(--text-main);
         }
 
-        .nav-link:hover::after, .nav-link.active::after {
+        .nav-link:hover::after,
+        .nav-link.active::after {
             width: 100%;
         }
 
@@ -343,13 +356,31 @@
             position: absolute;
         }
 
-        .hamburger span:nth-child(1) { top: 0; }
-        .hamburger span:nth-child(2) { top: 9px; }
-        .hamburger span:nth-child(3) { top: 18px; }
+        .hamburger span:nth-child(1) {
+            top: 0;
+        }
 
-        .hamburger.open span:nth-child(1) { transform: rotate(45deg); top: 9px; }
-        .hamburger.open span:nth-child(2) { opacity: 0; }
-        .hamburger.open span:nth-child(3) { transform: rotate(-45deg); top: 9px; }
+        .hamburger span:nth-child(2) {
+            top: 9px;
+        }
+
+        .hamburger span:nth-child(3) {
+            top: 18px;
+        }
+
+        .hamburger.open span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+
+        .hamburger.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.open span:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 9px;
+        }
 
         /* ==========================================================================
            1. HOME / HERO SECTION
@@ -411,8 +442,15 @@
         }
 
         @keyframes blink {
-            0%, 100% { border-color: transparent; }
-            50% { border-color: var(--primary-light); }
+
+            0%,
+            100% {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: var(--primary-light);
+            }
         }
 
         .hero-intro {
@@ -475,9 +513,17 @@
             border-radius: 50%;
         }
 
-        .dot-red { background: #ef4444; }
-        .dot-yellow { background: #f59e0b; }
-        .dot-green { background: #10b981; }
+        .dot-red {
+            background: #ef4444;
+        }
+
+        .dot-yellow {
+            background: #f59e0b;
+        }
+
+        .dot-green {
+            background: #10b981;
+        }
 
         .code-title {
             font-family: 'Fira Code', monospace;
@@ -492,10 +538,22 @@
             color: var(--text-muted);
         }
 
-        .code-keyword { color: var(--purple); }
-        .code-var { color: var(--cyan); }
-        .code-string { color: var(--emerald); }
-        .code-comment { color: var(--text-dim); font-style: italic; }
+        .code-keyword {
+            color: var(--purple);
+        }
+
+        .code-var {
+            color: var(--cyan);
+        }
+
+        .code-string {
+            color: var(--emerald);
+        }
+
+        .code-comment {
+            color: var(--text-dim);
+            font-style: italic;
+        }
 
         .hero-stat-pills {
             display: flex;
@@ -1033,7 +1091,8 @@
             margin-bottom: 8px;
         }
 
-        .form-input, .form-textarea {
+        .form-input,
+        .form-textarea {
             width: 100%;
             padding: 12px 16px;
             background: var(--bg-input);
@@ -1045,7 +1104,8 @@
             transition: var(--transition);
         }
 
-        .form-input:focus, .form-textarea:focus {
+        .form-input:focus,
+        .form-textarea:focus {
             outline: none;
             border-color: var(--primary-light);
             box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
@@ -1159,7 +1219,8 @@
                 justify-content: center;
             }
 
-            .about-grid, .contact-grid {
+            .about-grid,
+            .contact-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1206,12 +1267,19 @@
                 font-size: 1.15rem;
             }
 
-            .glass-card, .about-text-card, .about-details-card, .activity-card, .goal-card, .contact-info-card, .contact-form-card {
+            .glass-card,
+            .about-text-card,
+            .about-details-card,
+            .activity-card,
+            .goal-card,
+            .contact-info-card,
+            .contact-form-card {
                 padding: 24px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Ambient Glow Blobs -->
@@ -1253,26 +1321,36 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <!-- Graduation Cap Icon -->
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
                         REVA University, Bangalore
                     </div>
-                    
+
                     <h1 class="hero-name">Hi, I'm <span class="text-gradient">Sinchana M C</span></h1>
-                    
+
                     <div class="hero-tagline">
                         <span>3rd Semester</span>
                         <span class="hero-typing" id="typingElement">B.Tech Computer Science Student</span>
                     </div>
 
                     <p class="hero-intro">
-                        I am a Computer Science student interested in programming, web development, AI, cybersecurity, and problem-solving. Currently learning and improving my technical skills through academic activities and coding practice.
+                        I am a Computer Science student interested in programming, web development, AI, cybersecurity,
+                        and problem-solving. Currently learning and improving my technical skills through academic
+                        activities and coding practice.
                     </p>
 
                     <div class="hero-cta">
                         <a href="#projects" class="btn btn-primary">
                             View My Projects
                             <!-- Arrow Down SVG -->
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19" />
+                                <polyline points="19 12 12 19 5 12" />
+                            </svg>
                         </a>
                         <a href="#contact" class="btn btn-secondary">
                             Get In Touch
@@ -1293,25 +1371,43 @@
                         <div class="code-content">
                             <span class="code-comment">// Student Profile Object</span><br>
                             <span class="code-keyword">struct</span> Student {<br>
-                            &nbsp;&nbsp;<span class="code-keyword">string</span> name = <span class="code-string">"Sinchana M C"</span>;<br>
-                            &nbsp;&nbsp;<span class="code-keyword">string</span> degree = <span class="code-string">"B.Tech CS"</span>;<br>
-                            &nbsp;&nbsp;<span class="code-keyword">int</span> semester = <span class="code-var">3</span>;<br>
-                            &nbsp;&nbsp;<span class="code-keyword">string</span> university = <span class="code-string">"REVA University"</span>;<br>
-                            &nbsp;&nbsp;<span class="code-keyword">bool</span> status = <span class="code-string">"Active Learning"</span>;<br>
+                            &nbsp;&nbsp;<span class="code-keyword">string</span> name = <span
+                                class="code-string">"Sinchana M C"</span>;<br>
+                            &nbsp;&nbsp;<span class="code-keyword">string</span> degree = <span
+                                class="code-string">"B.Tech CS"</span>;<br>
+                            &nbsp;&nbsp;<span class="code-keyword">int</span> semester = <span
+                                class="code-var">3</span>;<br>
+                            &nbsp;&nbsp;<span class="code-keyword">string</span> university = <span
+                                class="code-string">"REVA University"</span>;<br>
+                            &nbsp;&nbsp;<span class="code-keyword">bool</span> status = <span
+                                class="code-string">"Active Learning"</span>;<br>
                             };
                         </div>
 
                         <div class="hero-stat-pills">
                             <div class="stat-pill">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
                                 Web Dev & AI
                             </div>
                             <div class="stat-pill">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
                                 Cybersecurity
                             </div>
                             <div class="stat-pill">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                    <line x1="9" y1="9" x2="9.01" y2="9" />
+                                    <line x1="15" y1="9" x2="15.01" y2="9" />
+                                </svg>
                                 LeetCode & HackerRank
                             </div>
                         </div>
@@ -1332,50 +1428,78 @@
                 <div class="about-grid">
                     <div class="about-text-card">
                         <p class="about-p">
-                            Hello! I am <strong>Sinchana M C</strong>, currently pursuing my <strong>B.Tech in Computer Science (3rd Semester)</strong> at <strong>REVA University, Bangalore</strong>.
+                            I am a 3rd-semester B.Tech Computer Science student at <strong>REVA University,
+                                Bangalore</strong>, focused on building a solid technical foundation through coursework
+                            and coding practice.
                         </p>
                         <p class="about-p">
-                            I am a passionate Computer Science student dedicated to building a strong technical foundation. I spend my time learning core programming languages, practicing algorithmic problem-solving, and exploring modern software tools. Through consistent academic activities and hands-on coding practice, I aim to continually expand my knowledge and capabilities.
+                            I dedicate my time to learning programming fundamentals, exploring software tools, and
+                            continuously improving my problem-solving abilities through structured academic activities.
                         </p>
 
                         <h3 class="interests-header">
                             <!-- Compass Icon -->
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                            </svg>
                             Key Areas of Interest
                         </h3>
 
                         <div class="interests-grid">
                             <div class="interest-item">
                                 <div class="interest-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="16 18 22 12 16 6" />
+                                        <polyline points="8 6 2 12 8 18" />
+                                    </svg>
                                 </div>
                                 <span class="interest-title">Programming</span>
                             </div>
 
                             <div class="interest-item">
                                 <div class="interest-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                        <line x1="8" y1="21" x2="16" y2="21" />
+                                        <line x1="12" y1="17" x2="12" y2="21" />
+                                    </svg>
                                 </div>
                                 <span class="interest-title">Web Development</span>
                             </div>
 
                             <div class="interest-item">
                                 <div class="interest-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.1 12a10 10 0 0 1 9.9-10v10z"/><circle cx="12" cy="12" r="3"/></svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 2a10 10 0 1 0 10 10H12V2z" />
+                                        <path d="M12 12L2.1 12a10 10 0 0 1 9.9-10v10z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
                                 </div>
                                 <span class="interest-title">Artificial Intelligence</span>
                             </div>
 
                             <div class="interest-item">
                                 <div class="interest-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
                                 </div>
                                 <span class="interest-title">Cybersecurity</span>
                             </div>
 
                             <div class="interest-item" style="grid-column: 1 / -1;">
                                 <div class="interest-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                                    </svg>
                                 </div>
                                 <span class="interest-title">Problem Solving & Algorithms</span>
                             </div>
@@ -1387,7 +1511,11 @@
 
                         <div class="detail-list-item">
                             <div class="detail-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
                             </div>
                             <div>
                                 <div class="detail-label">Name</div>
@@ -1397,7 +1525,11 @@
 
                         <div class="detail-list-item">
                             <div class="detail-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                </svg>
                             </div>
                             <div>
                                 <div class="detail-label">Course & Semester</div>
@@ -1407,7 +1539,11 @@
 
                         <div class="detail-list-item">
                             <div class="detail-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    <polyline points="9 22 9 12 15 12 15 22" />
+                                </svg>
                             </div>
                             <div>
                                 <div class="detail-label">University</div>
@@ -1417,7 +1553,13 @@
 
                         <div class="detail-list-item">
                             <div class="detail-icon">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="2" y1="12" x2="22" y2="12" />
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                </svg>
                             </div>
                             <div>
                                 <div class="detail-label">Focus</div>
@@ -1435,45 +1577,55 @@
                 <div class="section-header">
                     <span class="section-tag">Practical Work</span>
                     <h2 class="section-title">Projects & <span class="text-gradient">Learning Activities</span></h2>
-                    <p class="section-subtitle">Overview of my actual academic setup, version control tools, and problem-solving practice.</p>
+                    <p class="section-subtitle">Overview of my actual academic setup, version control tools, and
+                        problem-solving practice.</p>
                 </div>
 
                 <div class="activities-grid">
-                    <!-- Activity 1 -->
+                    <!-- Activity 1: Development Environment -->
                     <div class="activity-card">
                         <div class="activity-top">
                             <div class="activity-icon-wrap">
                                 <!-- Code Editor Icon -->
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
                             </div>
                             <div>
-                                <span class="activity-category">Development Setup</span>
-                                <h3 class="activity-title">VS Code Environment</h3>
+                                <span class="activity-category">Development Environment</span>
+                                <h3 class="activity-title">VS Code Setup</h3>
                             </div>
                         </div>
                         <div class="activity-bullets">
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Set up and configured Visual Studio Code for programming and development work.</span>
-                            </div>
-                            <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Utilizing extensions and customized setups to write C, Python, and Web code efficiently.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Set up and configured VS Code for programming and development.</span>
                             </div>
                         </div>
                         <div class="activity-tags">
                             <span class="tag-pill">VS Code</span>
                             <span class="tag-pill">IDE</span>
-                            <span class="tag-pill">Development Tools</span>
+                            <span class="tag-pill">Setup</span>
                         </div>
                     </div>
 
-                    <!-- Activity 2 -->
+                    <!-- Activity 2: Git & GitHub -->
                     <div class="activity-card">
                         <div class="activity-top">
                             <div class="activity-icon-wrap">
                                 <!-- Git Branch Icon -->
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="6" y1="3" x2="6" y2="15" />
+                                    <circle cx="18" cy="6" r="3" />
+                                    <circle cx="6" cy="18" r="3" />
+                                    <path d="M18 9a9 9 0 0 1-9 9" />
+                                </svg>
                             </div>
                             <div>
                                 <span class="activity-category">Version Control</span>
@@ -1482,108 +1634,152 @@
                         </div>
                         <div class="activity-bullets">
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Learned foundational Git and GitHub concepts and workflow principles.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Learned foundational Git and GitHub concepts.</span>
                             </div>
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Created and managed GitHub repositories, practicing regular commits and version management.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Created GitHub repositories and practiced commits and version control.</span>
                             </div>
                         </div>
                         <div class="activity-tags">
                             <span class="tag-pill">Git</span>
                             <span class="tag-pill">GitHub</span>
                             <span class="tag-pill">Commits</span>
-                            <span class="tag-pill">Repositories</span>
                         </div>
                     </div>
 
-                    <!-- Activity 3 -->
+                    <!-- Activity 3: GitLens & Collaboration -->
                     <div class="activity-card">
                         <div class="activity-top">
                             <div class="activity-icon-wrap">
                                 <!-- Users / Collaboration Icon -->
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
                             </div>
                             <div>
-                                <span class="activity-category">Team Collaboration</span>
+                                <span class="activity-category">Collaboration</span>
                                 <h3 class="activity-title">GitLens & Live Share</h3>
                             </div>
                         </div>
                         <div class="activity-bullets">
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Used GitLens extension for repository inspection and line history tracking.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Used GitLens extension for code tracking and inspection.</span>
                             </div>
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Practiced real-time collaboration using GitHub and Live Share, contributing to a Hello World repository.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Practiced collaboration using GitHub and Live Share on a Hello World
+                                    repository.</span>
                             </div>
                         </div>
                         <div class="activity-tags">
                             <span class="tag-pill">GitLens</span>
                             <span class="tag-pill">Live Share</span>
-                            <span class="tag-pill">Collaboration</span>
                             <span class="tag-pill">Hello World Repo</span>
                         </div>
                     </div>
 
-                    <!-- Activity 4 -->
+                    <!-- Activity 4: LeetCode -->
                     <div class="activity-card">
                         <div class="activity-top">
                             <div class="activity-icon-wrap">
                                 <!-- Terminal / Code Icon -->
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="4 17 10 11 4 5" />
+                                    <line x1="12" y1="19" x2="20" y2="19" />
+                                </svg>
                             </div>
                             <div>
-                                <span class="activity-category">Algorithmic Practice</span>
-                                <h3 class="activity-title">LeetCode Problem Solving</h3>
+                                <span class="activity-category">Problem Solving</span>
+                                <h3 class="activity-title">LeetCode Practice</h3>
                             </div>
                         </div>
                         <div class="activity-bullets">
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Practiced algorithmic programming problems on LeetCode.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Practiced programming problems on LeetCode.</span>
                             </div>
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Focused on strengthening problem-solving logic and analytical coding skills.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Worked on improving problem-solving logic and coding skills.</span>
                             </div>
                         </div>
                         <div class="activity-tags">
                             <span class="tag-pill">LeetCode</span>
-                            <span class="tag-pill">Algorithms</span>
                             <span class="tag-pill">Problem Solving</span>
+                            <span class="tag-pill">Logic</span>
                         </div>
                     </div>
 
-                    <!-- Activity 5 -->
-                    <div class="activity-card" style="grid-column: 1 / -1;">
+                    <!-- Activity 5: HackerRank -->
+                    <div class="activity-card">
                         <div class="activity-top">
                             <div class="activity-icon-wrap">
                                 <!-- Cpu / Code Logic Icon -->
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="15" x2="23" y2="15"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="15" x2="4" y2="15"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                                    <rect x="9" y="9" width="6" height="6" />
+                                    <line x1="9" y1="1" x2="9" y2="4" />
+                                    <line x1="15" y1="1" x2="15" y2="4" />
+                                    <line x1="9" y1="20" x2="9" y2="23" />
+                                    <line x1="15" y1="20" x2="15" y2="23" />
+                                    <line x1="20" y1="9" x2="23" y2="9" />
+                                    <line x1="20" y1="15" x2="23" y2="15" />
+                                    <line x1="1" y1="9" x2="4" y2="9" />
+                                    <line x1="1" y1="15" x2="4" y2="15" />
+                                </svg>
                             </div>
                             <div>
-                                <span class="activity-category">Skill Evaluation</span>
-                                <h3 class="activity-title">HackerRank Coding Practice</h3>
+                                <span class="activity-category">Coding Practice</span>
+                                <h3 class="activity-title">HackerRank Practice</h3>
                             </div>
                         </div>
                         <div class="activity-bullets">
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Practiced programming problems and logic tests on HackerRank.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Practiced programming problems on HackerRank.</span>
                             </div>
                             <div class="bullet-item">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                                <span>Organized and structured coding solutions as part of my continuous portfolio development.</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Organized coding solutions as part of my portfolio work.</span>
                             </div>
                         </div>
                         <div class="activity-tags">
                             <span class="tag-pill">HackerRank</span>
-                            <span class="tag-pill">Logic Building</span>
-                            <span class="tag-pill">Coding Practice</span>
-                            <span class="tag-pill">Portfolio Solutions</span>
+                            <span class="tag-pill">Coding Solutions</span>
+                            <span class="tag-pill">Portfolio Work</span>
                         </div>
                     </div>
                 </div>
@@ -1611,7 +1807,8 @@
 
                     <!-- Python -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: var(--cyan); border-color: rgba(6, 182, 212, 0.3);">Py</div>
+                        <div class="skill-badge-icon" style="color: var(--cyan); border-color: rgba(6, 182, 212, 0.3);">
+                            Py</div>
                         <div class="skill-info">
                             <div class="skill-name">Python</div>
                             <div class="skill-level-text">Programming & Logic</div>
@@ -1620,7 +1817,8 @@
 
                     <!-- HTML -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: #f97316; border-color: rgba(249, 115, 22, 0.3);">HTML</div>
+                        <div class="skill-badge-icon" style="color: #f97316; border-color: rgba(249, 115, 22, 0.3);">
+                            HTML</div>
                         <div class="skill-info">
                             <div class="skill-name">HTML</div>
                             <div class="skill-level-text">Web Structure</div>
@@ -1629,7 +1827,8 @@
 
                     <!-- CSS -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">CSS</div>
+                        <div class="skill-badge-icon" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">CSS
+                        </div>
                         <div class="skill-info">
                             <div class="skill-name">CSS</div>
                             <div class="skill-level-text">Styling & Layouts</div>
@@ -1638,7 +1837,8 @@
 
                     <!-- JavaScript -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: #facc15; border-color: rgba(250, 204, 21, 0.3);">JS</div>
+                        <div class="skill-badge-icon" style="color: #facc15; border-color: rgba(250, 204, 21, 0.3);">JS
+                        </div>
                         <div class="skill-info">
                             <div class="skill-name">JavaScript</div>
                             <div class="skill-level-text">Client-Side Logic</div>
@@ -1647,10 +1847,11 @@
 
                     <!-- Java (Learning) -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3);">Java</div>
+                        <div class="skill-badge-icon" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3);">Java
+                        </div>
                         <div class="skill-info">
                             <div class="skill-name">
-                                Java 
+                                Java
                                 <span class="learning-tag">Learning</span>
                             </div>
                             <div class="skill-level-text">Currently Learning</div>
@@ -1659,7 +1860,8 @@
 
                     <!-- Git -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: #f43f5e; border-color: rgba(244, 63, 94, 0.3);">Git</div>
+                        <div class="skill-badge-icon" style="color: #f43f5e; border-color: rgba(244, 63, 94, 0.3);">Git
+                        </div>
                         <div class="skill-info">
                             <div class="skill-name">Git</div>
                             <div class="skill-level-text">Version Control</div>
@@ -1668,7 +1870,8 @@
 
                     <!-- GitHub -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: var(--text-main); border-color: rgba(255, 255, 255, 0.2);">GH</div>
+                        <div class="skill-badge-icon"
+                            style="color: var(--text-main); border-color: rgba(255, 255, 255, 0.2);">GH</div>
                         <div class="skill-info">
                             <div class="skill-name">GitHub</div>
                             <div class="skill-level-text">Code Hosting</div>
@@ -1677,7 +1880,8 @@
 
                     <!-- VS Code -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: #0284c7; border-color: rgba(2, 132, 199, 0.3);">VSC</div>
+                        <div class="skill-badge-icon" style="color: #0284c7; border-color: rgba(2, 132, 199, 0.3);">VSC
+                        </div>
                         <div class="skill-info">
                             <div class="skill-name">VS Code</div>
                             <div class="skill-level-text">Primary IDE</div>
@@ -1686,7 +1890,8 @@
 
                     <!-- GitLens -->
                     <div class="skill-card">
-                        <div class="skill-badge-icon" style="color: var(--purple); border-color: rgba(168, 85, 247, 0.3);">GL</div>
+                        <div class="skill-badge-icon"
+                            style="color: var(--purple); border-color: rgba(168, 85, 247, 0.3);">GL</div>
                         <div class="skill-info">
                             <div class="skill-name">GitLens</div>
                             <div class="skill-level-text">Repo Inspection Tool</div>
@@ -1695,7 +1900,8 @@
 
                     <!-- Problem Solving -->
                     <div class="skill-card" style="grid-column: 1 / -1;">
-                        <div class="skill-badge-icon" style="color: var(--emerald); border-color: rgba(16, 185, 129, 0.3);">PS</div>
+                        <div class="skill-badge-icon"
+                            style="color: var(--emerald); border-color: rgba(16, 185, 129, 0.3);">PS</div>
                         <div class="skill-info">
                             <div class="skill-name">Problem Solving</div>
                             <div class="skill-level-text">Algorithmic thinking & competitive coding practice</div>
@@ -1711,50 +1917,79 @@
                 <div class="section-header">
                     <span class="section-tag">Digital Footprint</span>
                     <h2 class="section-title">Online <span class="text-gradient">Profiles</span></h2>
-                    <p class="section-subtitle">Platforms where I code and connect (Placeholders will be updated with actual URLs).</p>
+                    <p class="section-subtitle">Platforms where I code and connect (Placeholders will be updated with
+                        actual URLs).</p>
                 </div>
 
                 <div class="profiles-grid">
                     <!-- GitHub -->
-                    <a href="#" class="profile-card" onclick="alert('Placeholder Link: Add your GitHub URL here'); return false;">
+                    <a href="#" class="profile-card"
+                        onclick="alert('Placeholder Link: Add your GitHub URL here'); return false;">
                         <div class="profile-icon">
-                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
                         </div>
                         <div class="profile-name">GitHub</div>
                         <span class="placeholder-badge">Link Placeholder (#)</span>
                     </a>
 
                     <!-- LeetCode -->
-                    <a href="#" class="profile-card" onclick="alert('Placeholder Link: Add your LeetCode URL here'); return false;">
+                    <a href="#" class="profile-card"
+                        onclick="alert('Placeholder Link: Add your LeetCode URL here'); return false;">
                         <div class="profile-icon">
-                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
                         </div>
                         <div class="profile-name">LeetCode</div>
                         <span class="placeholder-badge">Link Placeholder (#)</span>
                     </a>
 
                     <!-- HackerRank -->
-                    <a href="#" class="profile-card" onclick="alert('Placeholder Link: Add your HackerRank URL here'); return false;">
+                    <a href="#" class="profile-card"
+                        onclick="alert('Placeholder Link: Add your HackerRank URL here'); return false;">
                         <div class="profile-icon">
-                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/></svg>
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                                <rect x="9" y="9" width="6" height="6" />
+                            </svg>
                         </div>
                         <div class="profile-name">HackerRank</div>
                         <span class="placeholder-badge">Link Placeholder (#)</span>
                     </a>
 
                     <!-- LinkedIn -->
-                    <a href="#" class="profile-card" onclick="alert('Placeholder Link: Add your LinkedIn URL here'); return false;">
+                    <a href="#" class="profile-card"
+                        onclick="alert('Placeholder Link: Add your LinkedIn URL here'); return false;">
                         <div class="profile-icon">
-                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
                         </div>
                         <div class="profile-name">LinkedIn</div>
                         <span class="placeholder-badge">Link Placeholder (#)</span>
                     </a>
 
                     <!-- Instagram -->
-                    <a href="#" class="profile-card" onclick="alert('Placeholder Link: Add your Instagram URL here'); return false;">
+                    <a href="#" class="profile-card"
+                        onclick="alert('Placeholder Link: Add your Instagram URL here'); return false;">
                         <div class="profile-icon">
-                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
                         </div>
                         <div class="profile-name">Instagram</div>
                         <span class="placeholder-badge">Link Placeholder (#)</span>
@@ -1769,10 +2004,15 @@
                 <div class="goal-card-wrap">
                     <div class="goal-card">
                         <!-- Quote Icon SVG -->
-                        <svg class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 6-4 6-1 0-1 2 0 2zm13 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 6-4 6-1 0-1 2 0 2z"/></svg>
-                        
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 6-4 6-1 0-1 2 0 2zm13 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 6-4 6-1 0-1 2 0 2z" />
+                        </svg>
+
                         <blockquote class="goal-quote">
-                            "My goal is to become a Full-Stack Developer. I want to strengthen my programming and web development skills, build practical projects, and continue exploring areas such as AI and cybersecurity."
+                            "My goal is to become a Full-Stack Developer. I want to strengthen my programming and web
+                            development skills, build practical projects, and continue exploring areas such as AI and
+                            cybersecurity."
                         </blockquote>
 
                         <div class="goal-author">
@@ -1797,7 +2037,8 @@
                     <div class="contact-info-card">
                         <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Let's Connect</h3>
                         <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
-                            I welcome feedback, student networking, and discussions about technology, programming, or web development learning.
+                            I welcome feedback, student networking, and discussions about technology, programming, or
+                            web development learning.
                         </p>
 
                         <div class="contact-detail-box">
@@ -1805,7 +2046,11 @@
                             <div class="email-placeholder-box">
                                 <span id="emailText">your.email@example.com</span>
                                 <button class="copy-btn" id="copyEmailBtn" title="Copy placeholder email">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                                    </svg>
                                 </button>
                             </div>
                             <div style="font-size: 0.75rem; color: var(--text-dim); margin-top: 8px;">
@@ -1818,26 +2063,37 @@
                         <form id="contactForm">
                             <div class="form-group">
                                 <label for="nameInput" class="form-label">Your Name</label>
-                                <input type="text" id="nameInput" class="form-input" placeholder="e.g. Fellow Student / Recruiter" required>
+                                <input type="text" id="nameInput" class="form-input"
+                                    placeholder="e.g. Fellow Student / Recruiter" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="emailInput" class="form-label">Your Email</label>
-                                <input type="email" id="emailInput" class="form-input" placeholder="e.g. name@example.com" required>
+                                <input type="email" id="emailInput" class="form-input"
+                                    placeholder="e.g. name@example.com" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="messageInput" class="form-label">Message</label>
-                                <textarea id="messageInput" class="form-textarea" placeholder="Hello Sinchana, I saw your student portfolio..." required></textarea>
+                                <textarea id="messageInput" class="form-textarea"
+                                    placeholder="Hello Sinchana, I saw your student portfolio..." required></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-primary" style="width: 100%;">
                                 Send Message
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13" />
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                </svg>
                             </button>
 
                             <div class="form-toast" id="formToast">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
                                 Thank you for your message! (Form Demonstration)
                             </div>
                         </form>
@@ -1862,7 +2118,10 @@
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+        </svg>
     </button>
 
     <!-- JAVASCRIPT CODE -->
@@ -1974,7 +2233,7 @@
 
             function typeEffect() {
                 const currentRole = roles[roleIndex];
-                
+
                 if (isDeleting) {
                     typingElement.textContent = currentRole.substring(0, charIndex - 1);
                     charIndex--;
@@ -2002,4 +2261,5 @@
         });
     </script>
 </body>
+
 </html>
